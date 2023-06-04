@@ -9,11 +9,13 @@ const SecondBlock = () => {
 				<div className='flex flex-col gap-2 xl:w-1/3 text-center items-center xl:text-start xl:items-start'>
 					<h2 className='text-3xl font-medium text-slate-50'>שימושים</h2>
 					<p className='text-sm text-slate-400 mb-3'>
-						לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום
+						אנו מספקים פתרונות ייחודיים ומותאמים אישית לצרכים הספציפיים של העסקים.
+						מהתכנון והיישום של מערכות מתקדמות לאבטחת מידע, ועד לתמיכה טכנית מקצועית - כל אחד מהשימושים מספק
+						יתרונות משמעותיים לעסקים המבקשים להשתמש בפתרונות ה-IT שלנו.
 					</p>
 					<Button className='bg-none bg-slate-900 border border-slate-700/50 w-fit'>התחילו עכשיו</Button>
 				</div>
-				<div className='flex flex-col xl:flex-row gap-4 xl:w-2/3'>
+				<div className='grid grid-cols-1 xl:grid-cols-3 gap-4 xl:w-2/3'>
 					{Blocks.map((block, index) => (
 						<Block
 							key={index}
@@ -33,7 +35,7 @@ const Block = ({ title, text, image }: { title: string; text: string; image: str
 				src={image}
 				className='h-40 w-full object-cover'
 			/>
-			<div className='bg-indigo-800/10 backdrop-blur-lg w-full p-4'>
+			<div className='bg-indigo-800/10 backdrop-blur-lg w-full p-4 h-full'>
 				<h4 className='text-slate-50 mb-2'>{title}</h4>
 				<p className='text-xs text-slate-400'>{text}</p>
 			</div>
@@ -43,18 +45,18 @@ const Block = ({ title, text, image }: { title: string; text: string; image: str
 
 const Blocks = [
 	{
-		title: 'לורם איפסום',
-		text: 'לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.',
+		title: 'ניתוח ותכנון מערכות',
+		text: 'בעזרת צוות המומחים שלנו, אנו מתאימים פתרונות טכנולוגיים מתקדמים שמאפשרים לעסק שלכם להפוך ליעיל ומתוחזק על מנת להשיג את התוצאות המבוקשות.',
 		image: 'https://octo.vmware.com/wp-content/uploads/sites/18/2022/05/blockchain-v-1.6-release-blog--scaled-e1653345269770-576x324.jpeg',
 	},
 	{
-		title: 'לורם איפסום',
-		text: 'לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.',
+		title: 'אבטחת מידע',
+		text: 'עם מערכות אבטחה מתקדמות, הגנה מפני תוקפים ואיומים סייבריים, ותהליכים אוטומטיים לזיהוי ומניעת התקפות, אתם יכולים להיות בטוחים שמידע העסק שלכם נשמר בצורה מוגנת ומאובטחת.',
 		image: 'https://i0.wp.com/mbrjournal.com/wp-content/uploads/2022/01/Blockchain_Cover.jpg?fit=1326%2C862&ssl=1',
 	},
 	{
-		title: 'לורם איפסום',
-		text: 'לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.',
+		title: ' תמיכה ושירות מקצועי',
+		text: 'אנחנו מתחייבים לספק לכם את התמיכה הטכנית המובילה בתחום, כדי שתוכלו להמשיך לפעול בצורה חלקה ונכונה.',
 		image: 'https://www.deccanherald.com/sites/dh/files/articleimages/2022/08/15/blockchainistock-1358688859-1136321-1660559358.jpg',
 	},
 ]

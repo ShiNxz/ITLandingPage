@@ -5,10 +5,8 @@ const Footer = () => {
 		<div className='py-12 container flex flex-col xl:flex-row justify-between'>
 			<div className='flex flex-col mb-6 xl:mb-0 xl:w-2/5 justify-between text-slate-400'>
 				<div>
-					<h4 className='text-white text-xl font-medium mb-2'>WEBSITE</h4>
-					<p className='text-sm'>
-						לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום
-					</p>
+					<h4 className='text-white text-xl font-medium mb-2'>{'Intellify'.toUpperCase()}</h4>
+					<p className='text-sm'>שירותי IT מתקדמים ומותאמים אישית - מקצוענות ואמינות בראש ובראשונה</p>
 				</div>
 				<div className='flex flex-row gap-2 text-sm'>
 					<Link href='/'>תנאי שימוש</Link>•<Link href='/'>תנאי פרטיות</Link>
@@ -39,60 +37,56 @@ const Footer = () => {
 
 const Blocks = [
 	{
-		title: 'לורם איפסום',
+		title: 'מידע נוסף',
 		links: [
 			{
-				title: 'לורם',
+				title: 'שירותים',
 				href: '/',
 			},
 			{
-				title: 'לורם',
+				title: 'אודותינו',
 				href: '/',
 			},
 			{
-				title: 'לורם',
+				title: 'פרויקטים',
 				href: '/',
 			},
 			{
-				title: 'לורם',
+				title: 'שאלות נפוצות',
 				href: '/',
 			},
 		],
 	},
 	{
-		title: 'לורם איפסום 2',
+		title: 'צור קשר',
 		links: [
 			{
-				title: 'לורם',
+				title: 'טופס צור קשר',
 				href: '/',
 			},
 			{
-				title: 'לורם',
+				title: 'אימייל',
 				href: '/',
 			},
 			{
-				title: 'לורם',
-				href: '/',
-			},
-			{
-				title: 'לורם',
+				title: 'טלפון',
 				href: '/',
 			},
 		],
 	},
 	{
-		title: 'לורם איפסום 3',
+		title: 'קישורים מומלצים',
 		links: [
 			{
-				title: 'לורם',
+				title: 'מחירון',
 				href: '/',
 			},
 			{
-				title: 'לורם',
+				title: 'חדשות ומאמרים',
 				href: '/',
 			},
 			{
-				title: 'לורם',
+				title: 'שותפים ולקוחות',
 				href: '/',
 			},
 		],

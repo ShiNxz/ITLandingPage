@@ -1,17 +1,18 @@
 import Link from 'next/link'
+import Button from './Button'
 
 const Routes = [
-	{ text: 'About', link: '#' },
-	{ text: 'Projects', link: '#' },
-	{ text: 'Contact', link: '#' },
-	{ text: 'Blog', link: '#' },
+	{ text: 'אודותינו', link: '#' },
+	{ text: 'יתרוונת', link: '#' },
+	{ text: 'התחילו עכשיו', link: '#' },
+	{ text: 'צור קשר', link: '#' },
 ]
 
 const Navbar = () => {
 	return (
 		<div className='backdrop-blur-lg py-2 h-16 border-b border-slate-900 fixed right-0 left-0 z-50 flex'>
 			<div className='container flex flex-row items-center justify-between mx-auto'>
-				<span>WEBSITE</span>
+				<span className='font-medium text-lg'>{'Intellify'.toUpperCase()}</span>
 				<div className='lg:flex hidden flex-row gap-4 text-sm'>
 					{Routes.map((r) => (
 						<NavItem
@@ -20,7 +21,7 @@ const Navbar = () => {
 						/>
 					))}
 				</div>
-				<button>sdgsd</button>
+				<Button>צור קשר</Button>
 			</div>
 		</div>
 	)

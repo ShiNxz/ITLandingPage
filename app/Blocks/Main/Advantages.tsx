@@ -1,23 +1,25 @@
 import type { IconType } from 'react-icons'
-import { HiOutlineCheckCircle, HiOutlineShieldCheck, HiSquaresPlus } from 'react-icons/hi2'
+import { HiSquaresPlus } from 'react-icons/hi2'
+import { AiOutlineFieldTime } from 'react-icons/ai'
+import { MdAutoGraph } from 'react-icons/md'
 
 const ADVS = [
 	{
 		title: 'ניסיון',
 		description:
-			'We have been working in the field for more than 10 years and have accumulated a lot of experience in the field of construction and renovation.',
-		icon: HiOutlineShieldCheck,
+			'עם יותר מעשור של ניסיון בענף, אנחנו יכולים להבטיח שאנחנו מבינים את האתגרים והדרישות המשתנות של העסקים המודרניים. ניסיוננו הרחב מאפשר לנו לספק פתרונות מותאמים, מהירים ויעילים שמסייעים ללקוחותינו להשיג תוצאות מרשימות בתחום ה-IT.',
+		icon: AiOutlineFieldTime,
 	},
 	{
 		title: 'איכות',
 		description:
-			'We work with the best materials and the best professionals in the field, so we can guarantee the quality of the work.',
-		icon: HiOutlineCheckCircle,
+			'אנחנו מקפידים על סטנדרטים גבוהים של איכות בכל השלבים של הפרויקטים שלנו. השירותים שאנחנו מספקים מבוצעים באמצעות הטכנולוגיות המתקדמות ביותר ובעזרת מומחים מנוסים ומיומנים.',
+		icon: MdAutoGraph,
 	},
 	{
 		title: 'אחריות',
 		description:
-			'We provide a warranty for all our work, so you can be sure that you will receive the best service.',
+			'אנחנו מתייחסים לאחריות כחלק בלתי נפרד מהשירותים שאנו מספקים. אנחנו עומדים מאחורי הפתרונות והמערכות שאנחנו ממליצים ומיישמים. אנו מתעדכנים תמיד בטכנולוגיות המתקדמות ביותר ואנו נשארים זמינים לתמיכה טכנית, שאלות ותשובות, ופתרון בעיות.',
 		icon: HiSquaresPlus,
 	},
 ]
