@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Routes = [
 	{ text: 'אודותינו', link: '#' },
-	{ text: 'יתרוונת', link: '#' },
+	{ text: 'יתרונת', link: '#' },
 	{ text: 'התחילו עכשיו', link: '#' },
 	{ text: 'צור קשר', link: '#' },
 ]
