@@ -8,7 +8,7 @@ const Particle = () => (
 			opacity: 0,
 			top: '-50%',
 		}}
-		animate={{
+		whileInView={{
 			opacity: 0.2,
 			top: '-10%',
 			transition: {
@@ -16,6 +16,7 @@ const Particle = () => (
 			},
 		}}
 		className='absolute h-3/5 w-3/5 blur-[170px] bg-gradient-to-r rounded-full from-indigo-700 to-purple-700 -z-10 left-0 right-0 mx-auto'
+		viewport={{ once: true }}
 	/>
 )
 

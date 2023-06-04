@@ -1,7 +1,11 @@
+'use client'
+
 import type { IconType } from 'react-icons'
 import { HiSquaresPlus } from 'react-icons/hi2'
 import { AiOutlineFieldTime } from 'react-icons/ai'
 import { MdAutoGraph } from 'react-icons/md'
+import { motion } from 'framer-motion'
+import { fadeUp } from '@/MotionVariants'
 
 const ADVS = [
 	{
@@ -25,15 +29,20 @@ const ADVS = [
 ]
 
 const Advantages = () => {
-	return ADVS.map((adv) => (
-		<div
+	return ADVS.map((adv, index) => (
+		<motion.div
 			key={adv.title}
 			className='flex flex-col items-center text-center xl:items-start xl:text-start mb-12'
+			custom={3 + index * 0.8}
+			variants={fadeUp}
+			initial='hidden'
+			animate='visible'
+			viewport={{ once: true }}
 		>
 			<Icon icon={adv.icon} />
 			<h4 className='text-xl font-medium mb-2'>{adv.title}</h4>
 			<span className='text-slate-300 text-sm'>{adv.description}</span>
-		</div>
+		</motion.div>
 	))
 }
 

@@ -2,7 +2,7 @@ const Button = ({ children, className }: { children: React.ReactNode; className?
 	return (
 		<button
 			className={
-				'outline-none bg-gradient-to-r from-purple-500 to-indigo-500 px-4 py-2 text-slate-50 text-sm rounded-full ' +
+				'outline-none bg-gradient-to-r from-purple-500 to-indigo-500 px-6 py-2 text-slate-50 text-sm rounded-full ' +
 				className
 			}
 		>

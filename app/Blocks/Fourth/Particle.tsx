@@ -8,7 +8,7 @@ const Particle = () => (
 			opacity: 0,
 			top: '-70%',
 		}}
-		animate={{
+		whileInView={{
 			opacity: 0.2,
 			top: '-10%',
 			transition: {
